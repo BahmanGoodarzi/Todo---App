@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Barlow+Semi+Condensed:wght@100&family=Fredoka&family=K2D:ital,wght@1,500&family=Montserrat:wght@300;400&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Overpass:wght@200&family=Radio+Canada:wght@300&family=Red+Hat+Display:wght@300&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,300;1,300&family=Rubik+Moonrocks&family=Sansita+Swashed:wght@300&family=Shizuru&family=Square+Peg&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0e0e1b;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body.noor{
+    background-color: #898c96;
+}
+
+
+.container{
+    min-width: 400px;
+}
+
+main{
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: fixed;
+    top: 11rem;
+    background-color: #22223b;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fix{
+    position: fixed;
+    top: 3rem;
+    width: 400px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+header > h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 8px;
+}
+
+header > img{
+    width: 1.2rem;
+}
+
+.sun{
+    cursor: pointer;
+    transition: .5s;
+}
+
+.moon{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.top-fild{
+    margin-bottom: 19px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.top-fild > img{
+    cursor: pointer;
+}
+
+
+.fild {
+    border-bottom: 1px solid #363953;
+}
+
+.fild , .top-fild{
+    background-color: #22223b;
+    position: relative;
+    display: flex;
+    padding: .9rem;
+    align-items: center;
+}
+
+
+.fild > p , .top-fild > p{
+    margin-left: 16px;
+    font-size: 13px;
+    flex-basis: 95%;
+    color: #898c96;
+    letter-spacing: 1px;
+}
+
+.fild > img {
+    opacity: 0;
+    width: 14px;
+    transition: .1s ease-in;
+    cursor: pointer;
+}
+
+.fild:hover > img , .top-fild:hover > img{
+    opacity: 1;
+}
+
+.raidio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 19px;
+    height: 17px;
+    border-radius: 50px;
+    border: 1px solid #363953;
+    cursor: pointer;
+    transition: .1s ease-in;
+}
+
+.raidio:hover{
+    border: 1px solid #7f53ac;
+}
+
+.raidio > img{
+    position: absolute;
+    width: 9px;
+}
+
+.active{
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.compelet{
+    text-decoration: line-through solid #898c96 ;
+}
+
+
+
+.top-fild > input{
+    flex-basis: 90%;
+    padding: 3px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4c4f58;
+    color: #898c96;
+    
+}
+
+.top-fild > img{
+    opacity: 1;
+}
+
+.fild .fild-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fild-bottom .select > span ,
+ .fild-bottom .clear > span{
+    color: #5e616b;
+    font-size: 11px;
+    padding: .5rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.fild-bottom .select > span:hover ,
+ .fild-bottom .clear > span:hover{
+     color: #a4a7af;
+ }
+
+ .fild-bottom .select > span.blue{
+    color: #647dee;
+}

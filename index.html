@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Todo app</title>
+
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="container">
+
+    <div class="fix">
+      <header>
+        <h1>TODO</h1>
+        <img class="moon" onclick="darkLight(false)" src="./images/icon-moon.svg" alt="">
+        <img class="sun" onclick="darkLight(true)" src="./images/icon-sun.svg" alt="">
+      </header>
+
+      <div class="top-fild">
+        <input type="text" placeholder="Currently Typing">
+        <img src="./images/icon-plus.svg" alt="">
+      </div>
+    </div>
+
+    <main>
+      <div class="todo-container">
+        <ul class="todo"></ul>
+      </div>
+
+      <div class="fild">
+        <div class="fild-bottom">
+          <div class="select">
+            <span class="all">All</span>
+            <span class="act">Active</span>
+            <span class="completed">Completed</span>
+          </div>
+
+          <div class="clear">
+            <span>Clear Completed</span>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <!-- Drag and drop to reorder list -->
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
